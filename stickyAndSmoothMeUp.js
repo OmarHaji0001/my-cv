@@ -1,5 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
+function initializeStickyAndSmooth() {
     const nav = document.querySelector('.main-nav');
+    if (!nav) {
+        console.error('Main navigation element not found');
+        return;
+    }
+
     const stickyPoint = nav.offsetTop; // Get the offset position of the navbar
     let mybutton = document.getElementById("scrollToTopBtn");
 
@@ -47,4 +52,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }, 30); // Decrease alpha every 30ms for a smooth transition
     });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (document.querySelector('.main-nav')) {
+        initializeStickyAndSmooth();
+    }
 });
