@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100010284099485&mibextid=ZbWKwL" class="icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/omar_haji0001" class="icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/omar-haji-0243b128b" class="icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <button onclick="location.href='contact.html'">Hire me now</button>
+    </div>
+
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <h1>Portfolio</h1>
+        <p>Check out some of my projects below.</p>
+    </header>
+    <br><br>
+    <h2>Projects</h2>
+
+    <!-- Carousel -->
+    <div class="carousel-container">
+        <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#projectCarousel" data-slide-to="1"></li>
+                <li data-target="#projectCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-image-wrapper">
+                        <img src="images/AutoDemo.png" class="d-block w-100" alt="Project 1">
+                        <div class="overlay">
+                            <div class="overlay-text">AutoMentor: An educational simulation providing a realistic
+                                driving experience with Unity, featuring user-controlled and AI-driven cars.</div>
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="project-name">AutoMentor</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-wrapper">
+                        <img src="images/AutoDemo.png" class="d-block w-100" alt="Project 1">
+                        <div class="overlay">
+                            <div class="overlay-text">AutoMentor: An educational simulation providing a realistic
+                                driving experience with Unity, featuring user-controlled and AI-driven cars.</div>
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="project-name">AutoMentor</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-wrapper">
+                        <img src="images/AutoDemo.png" class="d-block w-100" alt="Project 1">
+                        <div class="overlay">
+                            <div class="overlay-text">AutoMentor: An educational simulation providing a realistic
+                                driving experience with Unity, featuring user-controlled and AI-driven cars.</div>
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="project-name">AutoMentor</h5>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <div class="footer-bottom">
+            <div class="footer-content">
+                <p>&copy; Copyright 2024 - Omar Haji</p>
+                <div class="footer-icons">
+                    <span>Follow Me: </span>
+                    <a href="https://www.facebook.com/profile.php?id=100010284099485&mibextid=ZbWKwL" class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/omar_haji0001" class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/omar-haji-0243b128b" class="icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="scroll-to-top">^</button>
+    <script src="scroll.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.project-name').hover(function () {
+                $(this).closest('.carousel-item').find('.overlay').fadeIn();
+            }, function () {
+                $(this).closest('.carousel-item').find('.overlay').fadeOut();
+            });
+        });
+    </script>
+</body>
+
+</html>

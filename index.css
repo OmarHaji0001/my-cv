@@ -1,0 +1,35 @@
+@import url('common.css');
+
+header {
+    background: url('images/nature.jpg') no-repeat center center/cover;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    border: 3px solid #fff;
+}
+
+.intro-section {
+    padding: 50px;
+    background-color: #161b22;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: white;
+}

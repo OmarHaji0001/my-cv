@@ -1,0 +1,49 @@
+@import url('common.css');
+
+/* Specific styles for the portfolio page */
+header {
+    background: url('images/pine.jpg') no-repeat center center/cover;
+}
+
+/* Carousel */
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Overlay */
+.carousel-image-wrapper {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text {
+    font-size: 1em;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+}

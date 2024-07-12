@@ -1,0 +1,23 @@
+@import url('common.css');
+
+header {
+    background: url('file:///C:/Users/Msi/Desktop/myWeb/images/new pine and shine.jpg') no-repeat center center/cover;
+}
+
+.about-section {
+    padding: 50px;
+    background-color: #161b22;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #6e89ac;
+}
