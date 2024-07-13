@@ -267,3 +267,40 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* Typing Effect */
+.intro-section p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 0.15em solid orange;
+}
+
+.typing-active p.typing.active {
+    border-right: 0.15em solid orange;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}

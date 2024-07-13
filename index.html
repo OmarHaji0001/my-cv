@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
 </head>
 
 <body style="background-color: #161b22;">
@@ -15,25 +14,23 @@
     <div id="topbar-placeholder"></div>
     <header>
         <div id="mainnav-placeholder"></div>
-        <img src="images/my.jpg" alt="My Image" class="profile-pic">
+        <img src="images/my.jpg" alt="My Image" class="profile-pic" loading="lazy">
         <h1>Hi, I'm Omar Haji</h1>
+        <h2>And I'm a <span class="auto-type"></span></h2>
         <p>I'm a front-end web developer based in Nablus. Welcome to my website.</p>
     </header>
 
     <section class="intro-section">
         <h2>Hello there</h2>
-        <p>My name is Omar Haji. I'm a fresh graduate front-end web application developer. I design and
-            develop websites for small and medium businesses.
-        </p>
-        <p> I'm fast and self-learner
-            programmer with an interest in exploring and mastering new programming
-            concepts.
-        </p>
-        <p>
-            am proficient in detecting logical problems and special test cases and fix
-            them. Able to learn new skills anytime, I perform well under pressure. Excited to
-            work with you.
-        </p>
+        <p class="typing">My name is Omar Haji. I'm a fresh graduate front-end web application developer.</p>
+        <br>
+        <p class="typing">I design and develop websites for small and medium businesses.</p>
+        <br>
+        <p class="typing">I'm a fast self-learner with an interest in learning a new programming concepts.</p>
+        <br>
+        <p class="typing">I am proficient in detecting logical problems and special test cases and fixing them.</p>
+        <br>
+        <p class="typing">Able to learn new skills anytime, I perform well under pressure. Excited to work with you.</p>
     </section>
 
     <section class="contact-section">
@@ -42,14 +39,23 @@
         <p><i class="fas fa-phone"></i> +970 594503729</p>
         <p><i class="fas fa-envelope"></i> omarhaji0002@gmail.com</p>
     </section>
-    <button id="scrollToTopBtn" class="scroll-to-top">^</button>
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">^</button>
     <br><br><br>
     <div id="footer-placeholder"></div>
     <script src="stickyAndSmoothMeUp.js"></script>
     <script src="mainnav.js"></script>
     <script src="topbar.js"></script>
     <script src="footer.js"></script>
-
+    <script src="typingEffect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Front-End Developer", "Freelancer", "Unity Game Engine Developer"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>

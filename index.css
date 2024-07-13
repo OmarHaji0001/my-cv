@@ -33,3 +33,8 @@ header {
     line-height: 1.6em;
     color: white;
 }
+
+.auto-type {
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
