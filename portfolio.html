@@ -15,7 +15,7 @@
     <header>
         <div id="mainnav-placeholder"></div>
         <h1>Portfolio</h1>
-        <p>Check out some of my projects below.</p>
+        <p><span class="auto-type"></span></p>
     </header>
     <br><br>
     <h2>Projects</h2>
@@ -86,7 +86,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Check out some of my projects below."],
+            typeSpeed: 100,
+            backSpeed: 50,
+        });
+    </script>
     <script>
         $(document).ready(function () {
             $('.project-name').hover(function () {

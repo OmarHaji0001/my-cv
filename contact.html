@@ -15,7 +15,7 @@
     <header>
         <div id="mainnav-placeholder"></div>
         <h1>Contact</h1>
-        <p>If you have any questions, feel free to contact me using the form below.</p>
+        <p><span class="auto-type"></span></p>
     </header>
     <br>
     <br><br>
@@ -44,7 +44,14 @@
     <script src="mainnav.js"></script>
     <script src="topbar.js"></script>
     <script src="footer.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["If you have any questions, feel free to contact me using the form below."],
+            typeSpeed: 100,
+            backSpeed: 50,
+        });
+    </script>
 </body>
 
 </html>
