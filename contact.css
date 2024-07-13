@@ -24,9 +24,19 @@ header {
     flex-direction: column;
 }
 
-.form-container form input,
+.form-container form input {
+    background-color: black;
+    color: white;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
 .form-container form textarea {
     background-color: black;
+    color: white;
     margin-bottom: 15px;
     padding: 10px;
     font-size: 1em;
