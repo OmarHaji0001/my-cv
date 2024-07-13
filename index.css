@@ -5,8 +5,8 @@ header {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     position: absolute;
     top: 50%;
