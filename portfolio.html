@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="portfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 </head>
 
 <body>
+    <div class="loader">
+        <img src="images/spinner.gif" alt="Loading...">
+    </div>
     <div id="topbar-placeholder"></div>
     <header>
         <div id="mainnav-placeholder"></div>
@@ -129,6 +134,12 @@
         var typed = new Typed(".auto-type", {
             strings: ["Check out some of my projects below."],
             typeSpeed: 100,
+        });
+        $(window).on('load', function () {
+            $(".loader").fadeOut(1000, function () {
+                $("body").css("overflow", "auto");
+            });
+            $(".content").fadeIn(1200);
         });
     </script>
     <script>
