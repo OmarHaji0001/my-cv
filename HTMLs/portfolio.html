@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../CSSs/common.css">
     <link rel="stylesheet" href="../CSSs/portfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
 </head>
 
-<body>
+<body style="background-color: #161b22;">
     <div class="loader">
         <img src="../images/spinner.gif" alt="Loading...">
     </div>
@@ -22,9 +23,8 @@
         <h1>Portfolio</h1>
         <p><span class="auto-type"></span></p>
     </header>
-    <br><br>
+    <br>
     <h2>Projects</h2>
-    <br><br>
     <!-- Carousel -->
     <div class="carousel-container">
         <div id="projectCarousel" class="carousel slide" data-ride="carousel">
@@ -39,27 +39,19 @@
                         <img src="../images/AutoDemo.png" class="d-block w-100" alt="Project 1">
                         <div class="overlay">
                             <div class="overlay-text">AutoMentor is well-designed, simulation-based educational package
-                                that gives learners an almost real, interactive
-                                driving experience. The small city environment is programmed using the Unity game
-                                engine, populated with user-controlled
+                                that gives learners an almost real, interactive driving experience. The small city
+                                environment is programmed using the Unity game engine, populated with user-controlled
                                 car, AI-driven cars and non-player characters. It contains a particular set of rules and
-                                scenarios to test and improve
-                                user’s driving skills.
-                                While playing, the player will drive in the city in their car using a physical driving
-                                kit. Just as in actual physical
+                                scenarios to test and improve user’s driving skills. While playing, the player will
+                                drive in the city in their car using a physical driving kit. Just as in actual physical
                                 driving controller in a real car, when everything is realistic, the game is noticed to
-                                have any violation of any rule or
-                                a mistake made by the player and, in turn, penalizes it. There is notably a system
-                                called "rewind," in which the players
-                                may go back to the moments that led to a mistake, where they can correct it.
-                                The AI cars follow realistic driving patterns, creating a learning environment that
-                                mirrors real-world road conditions.
-                                This project will already bridge the enormous gap between theoretical knowledge
-                                regarding driving and practical
-                                application, with a very safe and controlled learning environment where learners may
-                                practice and perfect their driving
-                                skills.
-                            </div>
+                                have any violation of any rule or a mistake made by the player and, in turn, penalizes
+                                it. There is notably a system called "rewind," in which the players may go back to the
+                                moments that led to a mistake, where they can correct it. The AI cars follow realistic
+                                driving patterns, creating a learning environment that mirrors real-world road
+                                conditions. This project will already bridge the enormous gap between theoretical
+                                knowledge regarding driving and practical application, with a very safe and controlled
+                                learning environment where learners may practice and perfect their driving skills.</div>
                         </div>
                     </div>
                     <div class="carousel-caption d-none d-md-block">
@@ -70,11 +62,9 @@
                     <div class="carousel-image-wrapper">
                         <img src="../images/City Box Colliders.png" class="d-block w-100" alt="Project 1">
                         <div class="overlay">
-                            <div class="overlay-text">Box Colliders:
-                                These game objects are invisible to the user, they only appear for developers at the
-                                development stage. These game
-                                objects are used for scripting the simulator behavior
-                            </div>
+                            <div class="overlay-text">Box Colliders: These game objects are invisible to the user, they
+                                only appear for developers at the development stage. These game objects are used for
+                                scripting the simulator behavior</div>
                         </div>
                     </div>
                     <div class="carousel-caption d-none d-md-block">
@@ -86,21 +76,15 @@
                         <img src="../images/Stop Sign.png" class="d-block w-100" alt="Project 1">
                         <div class="overlay">
                             <div class="overlay-text">When the user enters the stop zone game object, he should at least
-                                fully stop for 5 seconds to ensure that no risks
-                                threaten his safety and use indicators to show his intended destination. Any breaking of
-                                these rules will get him
-                                penalized.
+                                fully stop for 5 seconds to ensure that no risks threaten his safety and use indicators
+                                to show his intended destination. Any breaking of these rules will get him penalized.
                                 When the AI car sensor detects the stop sign game object, the AI script will use
-                                equations of motion by getting the
-                                velocity of the AI car and the remaining distance between the first detection position
-                                and the stop zone position to
-                                apply the equations, to ensure that the AI car will stop exactly at the correct stop
-                                zone. After waiting for 5 seconds,
-                                the AI car will decide to move and turn the wanted indicator on, but before moving, the
-                                AI car will check if there are
-                                cars on the left if it wants to go in the right direction, and it'll check right and
-                                left if it wants to go the left
-                                direction.
+                                equations of motion by getting the velocity of the AI car and the remaining distance
+                                between the first detection position and the stop zone position to apply the equations,
+                                to ensure that the AI car will stop exactly at the correct stop zone. After waiting for
+                                5 seconds, the AI car will decide to move and turn the wanted indicator on, but before
+                                moving, the AI car will check if there are cars on the left if it wants to go in the
+                                right direction, and it'll check right and left if it wants to go the left direction.
                             </div>
                         </div>
                     </div>
@@ -119,14 +103,12 @@
             </a>
         </div>
     </div>
-    <br>
     <div id="footer-placeholder"></div>
     <button id="scrollToTopBtn" class="scroll-to-top">^</button>
     <script src="../JAVASCRIPTs/stickyAndSmoothMeUp.js"></script>
     <script src="../JAVASCRIPTs/mainnav.js"></script>
     <script src="../JAVASCRIPTs/topbar.js"></script>
     <script src="../JAVASCRIPTs/footer.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -141,8 +123,6 @@
             });
             $(".content").fadeIn(1200);
         });
-    </script>
-    <script>
         $(document).ready(function () {
             $('.project-name').hover(function () {
                 $(this).closest('.carousel-item').find('.overlay').fadeIn();
