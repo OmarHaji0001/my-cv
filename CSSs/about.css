@@ -1,7 +1,7 @@
 @import url('common.css');
 
 header {
-    background: url('images/new pine and shine.jpg') no-repeat center center/cover;
+    background: url('../images/new pine and shine.jpg') no-repeat center center/cover;
 }
 
 .about-section {

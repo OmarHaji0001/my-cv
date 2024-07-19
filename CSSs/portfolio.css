@@ -2,7 +2,7 @@
 
 /* Specific styles for the portfolio page */
 header {
-    background: url('images/pine.jpg') no-repeat center center/cover;
+    background: url('../images/pine.jpg') no-repeat center center/cover;
 }
 
 /* Carousel */
