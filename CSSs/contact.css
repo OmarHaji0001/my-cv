@@ -52,9 +52,30 @@ header {
     border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
-
 }
 
 .form-container form button:hover {
     background-color: rgba(128, 128, 128, 0.645);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        background: url('../images/star and pine and shine.jpeg') no-repeat center center/cover;
+    }
+
+    .form-section {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .form-container {
+        margin: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 50px 0;
+    }
 }

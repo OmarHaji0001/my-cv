@@ -16,58 +16,56 @@
     <div class="loader">
         <img src="../images/spinner.gif" alt="Loading...">
     </div>
-    <div class="content">
-        <div id="topbar-placeholder"></div>
-        <header>
-            <div id="mainnav-placeholder"></div>
-            <img src="../images/my.jpg" alt="My Image" class="profile-pic" loading="lazy" draggable="false">
-            <h1>Hi, I'm Omar Haji</h1>
-            <h2>And I'm a <span class="auto-type"></span></h2>
-            <p>I'm a front-end web developer based in Nablus. Welcome to my website.</p>
-        </header>
+    <div id="topbar-placeholder"></div>
+    <header>
+        <div id="mainnav-placeholder"></div>
+        <img src="../images/my.jpg" alt="My Image" class="profile-pic" loading="lazy" draggable="false">
+        <h1>Hi, I'm Omar Haji</h1>
+        <h2>And I'm a <span class="auto-type"></span></h2>
+        <p>I'm a front-end web developer based in Nablus. Welcome to my website.</p>
+    </header>
 
-        <section class="intro-section">
-            <h2>Hello there</h2>
-            <br><br>
-            <p class="typing">My name is Omar Haji. I'm a fresh graduate front-end web application developer.</p>
-            <p class="typing">I design and develop websites for small and medium businesses.</p>
-            <p class="typing">I'm a fast self-learner with an interest in learning a new programming concepts.</p>
-            <p class="typing">I am proficient in detecting logical problems and special test cases and fixing them.</p>
-            <p class="typing">Able to learn new skills anytime, I perform well under pressure. Excited to work with you.
-            </p>
-        </section>
-        <section class="contact-section">
-            <h3>Contact me</h3>
-            <p><i class="fas fa-map-marker-alt"></i> Nablus City, PS</p>
-            <p><i class="fas fa-phone"></i> +970 594503729</p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:omarhaji0002@gmail.com"
-                    class="email-link">omarhaji0002@gmail.com</a></p>
-        </section>
-        <br>
-        <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">^</button>
-        <div id="footer-placeholder"></div>
-        <script src="../JAVASCRIPTs/stickyAndSmoothMeUp.js"></script>
-        <script src="../JAVASCRIPTs/mainnav.js"></script>
-        <script src="../JAVASCRIPTs/topbar.js"></script>
-        <script src="../JAVASCRIPTs/footer.js"></script>
-        <script src="../JAVASCRIPTs/typingEffect.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script src="../JAVASCRIPTs/lazyload.js"></script>
-        <script>
-            var typed = new Typed(".auto-type", {
-                strings: ["Front-End Developer", "Freelancer", "Unity Game Engine Developer"],
-                typeSpeed: 100,
-                backSpeed: 50,
-                loop: true,
+    <section class="intro-section">
+        <h2>Hello there</h2>
+        <br><br>
+        <p class="typing">My name is Omar Haji. I'm a fresh graduate front-end web application developer.</p>
+        <p class="typing">I design and develop websites for small and medium businesses.</p>
+        <p class="typing">I'm a fast self-learner with an interest in learning a new programming concepts.</p>
+        <p class="typing">I am proficient in detecting logical problems and special test cases and fixing them.</p>
+        <p class="typing">Able to learn new skills anytime, I perform well under pressure. Excited to work with you.
+        </p>
+    </section>
+    <section class="contact-section">
+        <h3>Contact me</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Nablus City, PS</p>
+        <p><i class="fas fa-phone"></i> +970 594503729</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:omarhaji0002@gmail.com"
+                class="email-link">omarhaji0002@gmail.com</a></p>
+    </section>
+    <br>
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">^</button>
+    <div id="footer-placeholder"></div>
+    <script src="../JAVASCRIPTs/stickyAndSmoothMeUp.js"></script>
+    <script src="../JAVASCRIPTs/mainnav.js"></script>
+    <script src="../JAVASCRIPTs/topbar.js"></script>
+    <script src="../JAVASCRIPTs/footer.js"></script>
+    <script src="../JAVASCRIPTs/typingEffect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="../JAVASCRIPTs/lazyload.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Front-End Developer", "Freelancer", "Unity Game Engine Developer"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+        });
+        $(window).on('load', function () {
+            $(".loader").fadeOut(1000, function () {
+                $("body").css("overflow", "auto");
             });
-            $(window).on('load', function () {
-                $(".loader").fadeOut(1000, function () {
-                    $("body").css("overflow", "auto");
-                });
-                $(".content").fadeIn(1200);
-            });
-        </script>
-    </div>
+            $(".content").fadeIn(1200);
+        });
+    </script>
 </body>
 
 </html>

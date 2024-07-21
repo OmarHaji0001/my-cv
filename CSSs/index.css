@@ -38,3 +38,37 @@ header {
     color: orange;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        background: url('../images/nature.jpg') no-repeat center center/cover;
+    }
+
+    .intro-section {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .intro-section p {
+        font-size: 0.6em;
+    }
+
+    .auto-type {
+        color: orange;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 0.8em;
+    }
+}

@@ -32,28 +32,22 @@ html {
     overflow: hidden;
     background-color: #f8f8f8;
     position: fixed;
-    /* Ensure it stays in place */
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    /* Ensure it is on top of other elements */
 }
 
 .loader img {
     width: 340px;
-    /* Adjust this value to make the spinner smaller */
     height: 300px;
-    /* Maintain aspect ratio if needed */
 }
 
 .content {
     display: none;
 }
-
-/* Your existing CSS continues here */
 
 /* Top bar */
 .top-bar {
@@ -72,7 +66,8 @@ html {
 
 .icon {
     color: white;
-    margin-right: 15px;
+    margin-right: 10px;
+    /* Adjusted to reduce spacing */
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -81,10 +76,30 @@ html {
     color: #ade1fb;
 }
 
-.icon i {
-    font-size: 20px;
+.buttons {
+    display: flex;
+    align-items: center;
 }
 
+.buttons button {
+    font-size: 0.9em;
+    /* Adjusted to make buttons smaller */
+    padding: 5px 10px;
+    /* Adjusted to make buttons smaller */
+    margin-left: 10px;
+    /* Adjusted to reduce spacing between buttons */
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: rgba(128, 128, 128, 0.645);
+}
+
+/* Navigation */
 .main-nav {
     position: absolute;
     background-color: transparent;
@@ -133,12 +148,13 @@ html {
     background-color: #ddd;
 }
 
-
 .main-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main-nav ul li {
@@ -223,15 +239,13 @@ button:hover {
     background-color: rgba(128, 128, 128, 0.645);
 }
 
-/* Footer */
 footer {
     background-color: black;
-    padding: 10px 0;
+    padding: 15px 20px;
     text-align: center;
 }
 
 .footer-bottom {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
@@ -246,7 +260,7 @@ footer {
 
 .footer-content p {
     margin: 0;
-    padding-right: 30px;
+    padding-left: 20px;
     color: white;
 }
 
@@ -254,7 +268,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-right: 50px;
+    margin-right: 90px;
 }
 
 .footer-icons span {
@@ -292,7 +306,6 @@ footer {
     border-radius: 5px;
 }
 
-/* Overlay */
 .carousel-image-wrapper {
     position: relative;
 }
@@ -350,5 +363,124 @@ footer {
 
     50% {
         border-color: orange;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .main-nav ul li {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-nav ul li {
+        margin: 0 10px;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .intro-section p {
+        font-size: 0.1em;
+        /* Adjusted font size for smaller screens */
+        line-height: 1.2em;
+        /* Adjusted line height for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav ul {
+        justify-content: space-evenly;
+        /* Ensures space between items */
+    }
+
+    .main-nav ul li {
+        margin: 0 10px;
+    }
+
+    header {
+        padding: 100px 0;
+    }
+
+    .main-nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+
+    .intro-section p {
+        font-size: 0.6em;
+        /* Adjusted font size for smaller screens */
+        line-height: 0.8em;
+        /* Adjusted line height for smaller screens */
+    }
+
+    .intro-section,
+    .contact-section,
+    .about-section,
+    .form-section {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .form-container {
+        margin: 0;
+    }
+
+    .social-icons,
+    .buttons {
+        align-items: center;
+    }
+
+    .social-icons .icon,
+    .buttons button {
+        margin-bottom: 10px;
+    }
+
+    .footer-content {
+        align-items: center;
+    }
+
+    .footer-content p,
+    .footer-icons {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 0.5em;
+    }
+
+    h2 {
+        font-size: 0.1em;
+    }
+
+    h3 {
+        font-size: 0.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+
+    .scroll-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
     }
 }

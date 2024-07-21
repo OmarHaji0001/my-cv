@@ -1,11 +1,9 @@
 @import url('common.css');
 
-/* Specific styles for the portfolio page */
 header {
     background: url('../images/pine.jpg') no-repeat center center/cover;
 }
 
-/* Carousel */
 .carousel-container {
     max-width: 800px;
     margin: 0 auto 30px;
@@ -24,7 +22,6 @@ header {
     border-radius: 5px;
 }
 
-/* Overlay */
 .carousel-image-wrapper {
     position: relative;
 }
@@ -47,3 +44,16 @@ header {
     text-align: center;
     padding: 10px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        background: url('../images/pine.jpg') no-repeat center center/cover;
+    }
+
+    .carousel-inner img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {}
