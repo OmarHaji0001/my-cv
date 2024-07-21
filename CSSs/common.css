@@ -366,14 +366,7 @@ footer {
     }
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .main-nav ul li {
-        margin: 0 15px;
-    }
-}
-
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .main-nav ul li {
         margin: 0 10px;
     }
@@ -385,11 +378,9 @@ footer {
 
     .intro-section p {
         font-size: 0.1em;
-        /* Adjusted font size for smaller screens */
         line-height: 1.2em;
-        /* Adjusted line height for smaller screens */
     }
-}
+} */
 
 @media (max-width: 768px) {
     .main-nav ul {
@@ -414,9 +405,7 @@ footer {
 
     .intro-section p {
         font-size: 0.6em;
-        /* Adjusted font size for smaller screens */
         line-height: 0.8em;
-        /* Adjusted line height for smaller screens */
     }
 
     .intro-section,
@@ -457,6 +446,10 @@ footer {
         height: 100px;
     }
 
+    .sticky {
+        font-size: 0.9em;
+    }
+
     h1 {
         font-size: 0.9em;
     }
@@ -468,8 +461,6 @@ footer {
     h3 {
         font-size: 0.5em;
     }
-
-
 
     button {
         font-size: 0.9em;
