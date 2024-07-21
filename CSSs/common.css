@@ -458,7 +458,7 @@ footer {
     }
 
     h1 {
-        font-size: 0.5em;
+        font-size: 0.9em;
     }
 
     h2 {
@@ -469,9 +469,7 @@ footer {
         font-size: 0.5em;
     }
 
-    p {
-        font-size: 0.8em;
-    }
+
 
     button {
         font-size: 0.9em;

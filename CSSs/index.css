@@ -2,6 +2,8 @@
 
 header {
     background: url('../images/nature.jpg') no-repeat center center/cover;
+    overflow: hidden;
+    /* Ensure content doesn't overflow */
 }
 
 .profile-pic {
@@ -21,6 +23,8 @@ header {
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
+    overflow: hidden;
+    /* Ensure content doesn't overflow */
 }
 
 .intro-section h2 {
@@ -43,11 +47,18 @@ header {
 @media (max-width: 768px) {
     header {
         background: url('../images/nature.jpg') no-repeat center center/cover;
+        font-size: 0.7em;
+        overflow: hidden;
+        /* Ensure content doesn't overflow */
     }
 
     .intro-section {
         padding: 20px;
         max-width: 100%;
+    }
+
+    .intro-section p {
+        font-size: 0.6em;
     }
 
     .profile-pic {
@@ -57,18 +68,54 @@ header {
 }
 
 @media (max-width: 576px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+        /* Prevent horizontal scroll */
+    }
+
     .profile-pic {
         width: 100px;
         height: 100px;
+        top: 30%;
     }
 
     .intro-section p {
         font-size: 0.6em;
     }
 
+    header h1 {
+        font-size: 1.8em;
+        position: relative;
+        top: -20px;
+        left: 55px;
+        white-space: nowrap;
+        /* Prevent text wrapping */
+    }
+
+    header h2 {
+        font-size: 1.8em;
+        position: relative;
+        top: 40px;
+        white-space: nowrap;
+        /* Prevent text wrapping */
+    }
+
+    header p {
+        font-size: 1.1em;
+        position: relative;
+        top: 50px;
+        white-space: nowrap;
+        /* Prevent text wrapping */
+    }
+
     .auto-type {
         color: orange;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 0.8em;
+        font-size: 1em;
+        position: relative;
+        white-space: nowrap;
+        /* Prevent text wrapping */
     }
 }
