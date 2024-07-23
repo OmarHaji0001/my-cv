@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('./HTMLs/footer.html')
+    fetch('HTMLs/footer.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('HTTP error! Status: ' + response.status);
