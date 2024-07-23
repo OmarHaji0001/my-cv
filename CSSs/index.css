@@ -5,18 +5,42 @@ header {
     overflow: hidden;
 }
 
+header h1 {
+    position: relative;
+    top: 20px;
+    left: 15px;
+    white-space: nowrap;
+}
+
+header h2 {
+    position: relative;
+    top: 55px;
+    left: 7px;
+    white-space: nowrap;
+}
+
+header p {
+    position: relative;
+    top: 60px;
+    left: 10px;
+    white-space: nowrap;
+}
+
 .profile-pic {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 38%;
+    left: 5%;
     transform: translateY(-50%);
     border: 3px solid #fff;
 }
 
 .intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 50px;
     background-color: #161b22;
     text-align: left;
@@ -45,22 +69,49 @@ header {
 @media (max-width: 768px) {
     header {
         background: url('../images/nature.jpg') no-repeat center center/cover;
-        font-size: 0.7em;
         overflow: hidden;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        position: relative;
+        top: 20px;
+        left: 65px;
+        white-space: nowrap;
+    }
+
+    header h2 {
+        font-size: 1.3em;
+        position: relative;
+        top: 55px;
+        left: 70px;
+        white-space: nowrap;
+    }
+
+    header p {
+        font-size: 0.8em;
+        position: relative;
+        top: 60px;
+        left: 65px;
+        white-space: nowrap;
     }
 
     .intro-section {
         padding: 20px;
         max-width: 100%;
+        align-items: center;
     }
 
     .intro-section p {
-        font-size: 0.6em;
+        font-size: 0.8em;
+        margin-left: 5px;
     }
 
     .profile-pic {
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
+        top: 45%;
+        left: 5%;
     }
 }
 
@@ -74,7 +125,8 @@ header {
     .profile-pic {
         width: 100px;
         height: 100px;
-        top: 30%;
+        top: 35%;
+        left: 5%;
     }
 
     .intro-section p {
@@ -90,16 +142,18 @@ header {
     }
 
     header h2 {
-        font-size: 1.8em;
+        font-size: 1.3em;
         position: relative;
         top: 40px;
+        left: auto;
         white-space: nowrap;
     }
 
     header p {
-        font-size: 1.1em;
+        font-size: 0.7em;
         position: relative;
         top: 50px;
+        left: auto;
         white-space: nowrap;
     }
 
@@ -112,30 +166,45 @@ header {
     }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 395px) {
+    header {
+        background: url('../images/nature.jpg') no-repeat center center/cover;
+        overflow: hidden;
+    }
+
     .profile-pic {
         width: 80px;
         height: 80px;
         top: 35%;
+        left: 5%;
     }
 
     .intro-section p {
-        font-size: 0.6em;
+        font-size: 0.4em;
     }
 
     header h1 {
-        font-size: 1.6em;
+        font-size: 1.2em;
         top: -15px;
+        position: relative;
+        left: 55px;
+        white-space: nowrap;
     }
 
     header h2 {
-        font-size: 1.8em;
+        font-size: 0.9em;
         top: 15px;
+        position: relative;
+        left: 10px;
+        white-space: nowrap;
     }
 
     header p {
-        font-size: 0.9em;
+        font-size: 0.5em;
         top: 25px;
+        position: relative;
+        left: 0px;
+        white-space: nowrap;
     }
 
     .auto-type {

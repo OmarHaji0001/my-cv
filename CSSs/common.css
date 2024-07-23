@@ -366,22 +366,6 @@ footer {
     }
 }
 
-/* @media (max-width: 992px) {
-    .main-nav ul li {
-        margin: 0 10px;
-    }
-
-    .profile-pic {
-        width: 150px;
-        height: 150px;
-    }
-
-    .intro-section p {
-        font-size: 0.1em;
-        line-height: 1.2em;
-    }
-} */
-
 @media (max-width: 768px) {
     .main-nav ul {
         justify-content: space-evenly;
