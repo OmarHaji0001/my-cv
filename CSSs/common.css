@@ -473,3 +473,26 @@ footer {
         font-size: 20px;
     }
 }
+
+@media (max-width: 391px) {
+    header .main-nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 0.6em;
+    }
+
+    .buttons .social-icons {
+        font-size: 2px;
+    }
+
+    header .main-nav ul {
+        justify-content: space-evenly;
+        /* Ensures space between items */
+    }
+
+    .sticky {
+        font-size: 1em;
+        gap: 0px;
+    }
+}
