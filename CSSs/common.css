@@ -425,11 +425,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .profile-pic {
-        width: 100px;
-        height: 100px;
-    }
-
     .sticky {
         font-size: 0.9em;
     }
@@ -458,7 +453,7 @@ footer {
     }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 395px) {
     header .main-nav ul li a {
         text-decoration: none;
         color: white;
@@ -476,7 +471,7 @@ footer {
     }
 
     .sticky {
-        font-size: 1em;
+        font-size: 0.8em;
         gap: 0px;
     }
 }

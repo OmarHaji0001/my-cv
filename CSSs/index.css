@@ -3,27 +3,29 @@
 header {
     background: url('../images/nature.jpg') no-repeat center center/cover;
     overflow: hidden;
+    position: relative;
+}
+
+header h1,
+header h2,
+header p {
+    position: relative;
+    white-space: nowrap;
 }
 
 header h1 {
-    position: relative;
     top: 20px;
     left: 15px;
-    white-space: nowrap;
 }
 
 header h2 {
-    position: relative;
     top: 55px;
     left: 7px;
-    white-space: nowrap;
 }
 
 header p {
-    position: relative;
     top: 60px;
     left: 10px;
-    white-space: nowrap;
 }
 
 .profile-pic {
@@ -47,7 +49,6 @@ header p {
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
-    /* Ensure content doesn't overflow */
 }
 
 .intro-section h2 {
@@ -67,33 +68,22 @@ header p {
 }
 
 @media (max-width: 768px) {
-    header {
-        background: url('../images/nature.jpg') no-repeat center center/cover;
-        overflow: hidden;
-    }
-
     header h1 {
         font-size: 1.8em;
-        position: relative;
         top: 20px;
         left: 65px;
-        white-space: nowrap;
     }
 
     header h2 {
         font-size: 1.3em;
-        position: relative;
         top: 55px;
         left: 70px;
-        white-space: nowrap;
     }
 
     header p {
         font-size: 0.8em;
-        position: relative;
         top: 60px;
         left: 65px;
-        white-space: nowrap;
     }
 
     .intro-section {
@@ -116,12 +106,6 @@ header p {
 }
 
 @media (max-width: 576px) {
-
-    body,
-    html {
-        overflow-x: hidden;
-    }
-
     .profile-pic {
         width: 100px;
         height: 100px;
@@ -136,17 +120,17 @@ header p {
     header h1 {
         font-size: 1.8em;
         position: relative;
+        white-space: nowrap;
         top: -20px;
         left: 55px;
-        white-space: nowrap;
     }
 
     header h2 {
         font-size: 1.3em;
         position: relative;
-        top: 40px;
-        left: auto;
         white-space: nowrap;
+        left: auto;
+        top: 40px;
     }
 
     header p {
@@ -158,20 +142,11 @@ header p {
     }
 
     .auto-type {
-        color: orange;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1em;
-        position: relative;
-        white-space: nowrap;
     }
 }
 
 @media (max-width: 395px) {
-    header {
-        background: url('../images/nature.jpg') no-repeat center center/cover;
-        overflow: hidden;
-    }
-
     .profile-pic {
         width: 80px;
         height: 80px;
@@ -186,25 +161,19 @@ header p {
     header h1 {
         font-size: 1.2em;
         top: -15px;
-        position: relative;
         left: 55px;
-        white-space: nowrap;
     }
 
     header h2 {
         font-size: 0.9em;
         top: 15px;
-        position: relative;
-        left: 10px;
-        white-space: nowrap;
+        left: 0px;
     }
 
     header p {
         font-size: 0.5em;
         top: 25px;
-        position: relative;
         left: 0px;
-        white-space: nowrap;
     }
 
     .auto-type {
