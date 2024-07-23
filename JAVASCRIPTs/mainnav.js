@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('../HTMLs/mainnav.html')
+    fetch('mainnav.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('HTTP error! Status: ' + response.status);

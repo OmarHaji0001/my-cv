@@ -267,8 +267,8 @@ footer {
 .footer-icons {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-right: 90px;
+    gap: 5px;
+    margin-right: 20%;
 }
 
 .footer-icons span {
@@ -454,6 +454,20 @@ footer {
 }
 
 @media (max-width: 395px) {
+    .top-bar {
+        font-size: 0.7em;
+    }
+
+    .footer-content {
+        font-size: 0.7em;
+    }
+
+    .footer-icons a {
+        font-size: 0.7em;
+        padding: 5px;
+        margin-right: 1px;
+    }
+
     header .main-nav ul li a {
         text-decoration: none;
         color: white;
