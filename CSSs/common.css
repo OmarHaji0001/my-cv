@@ -451,6 +451,44 @@ footer {
         height: 40px;
         font-size: 20px;
     }
+
+    .contact-section {
+        padding: 30px;
+        background-color: #383d45;
+        text-align: left;
+        max-width: 340px;
+        max-height: 200px;
+        margin: 10px auto 0;
+        border-radius: 10px;
+    }
+
+    .contact-section h3 {
+        font-size: 1.4em;
+        margin-bottom: 18px;
+        color: white;
+    }
+
+    .contact-section p {
+        font-size: 0.9em;
+        line-height: 1.6em;
+        color: white;
+    }
+
+    .contact-section p i {
+        margin-right: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .footer-content {
+        font-size: 1em;
+        align-items: center;
+    }
+
+    .footer-icons a {
+        font-size: 1.1em;
+        padding: 5px;
+        margin-right: 1px;
+    }
 }
 
 @media (max-width: 395px) {
@@ -463,7 +501,7 @@ footer {
     }
 
     .footer-icons a {
-        font-size: 0.7em;
+        font-size: 1.1em;
         padding: 5px;
         margin-right: 1px;
     }
@@ -472,7 +510,7 @@ footer {
         text-decoration: none;
         color: white;
         font-weight: bold;
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
 
     .buttons .social-icons {
@@ -485,7 +523,33 @@ footer {
     }
 
     .sticky {
-        font-size: 0.8em;
-        gap: 0px;
+        font-size: 0.97em;
+    }
+
+    .contact-section {
+        padding: 30px;
+        background-color: #383d45;
+        text-align: left;
+        max-width: 260px;
+        max-height: 200px;
+        margin: 10px auto 0;
+        border-radius: 10px;
+    }
+
+    .contact-section h3 {
+        font-size: 1.2em;
+        margin-bottom: 18px;
+        color: white;
+    }
+
+    .contact-section p {
+        font-size: 0.9em;
+        line-height: 1.6em;
+        color: white;
+    }
+
+    .contact-section p i {
+        margin-right: 10px;
+        color: rgb(255, 255, 255);
     }
 }
