@@ -21,3 +21,25 @@ header {
     line-height: 1.6em;
     color: #6e89ac;
 }
+
+.about-section ul {
+    list-style-type: none; /* Removes the default bullets */
+    padding: 0; /* Removes the default padding */
+}
+
+.about-section ul li {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #6e89ac;
+    padding-left: 20px; /* Adds space before each list item */
+    position: relative;
+}
+
+.about-section ul li::before {
+    content: '•'; /* Adds a custom bullet */
+    color: #6e89ac; /* Bullet color */
+    position: absolute;
+    left: 0;
+    font-size: 1.3em; /* Increases bullet size */
+    line-height: 1.6em;
+}
